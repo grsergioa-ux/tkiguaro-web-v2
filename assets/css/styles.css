@@ -254,3 +254,67 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* NAV PRINCIPAL */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.menu-item a:hover {
+  color: #c8a96a; /* dorado premium */
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 15px;
+  min-width: 180px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown li {
+  margin-bottom: 10px;
+}
+
+.dropdown li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown a {
+  color: #333;
+  font-size: 14px;
+}
+
+/* SHOW DROPDOWN */
+.menu-item.has-dropdown:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
