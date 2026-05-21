@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tequila Personalizado Premium | TKI Guaro</title>
+  <meta name="description" content="Botellas de tequila personalizadas para eventos, regalos y empresas. Diseño exclusivo y experiencia premium.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="logo">TKI Guaro</div>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Colección</a>
+    <a href="#">Personaliza</a>
+    <a href="#">Eventos</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>No vendemos tequila.<br>Creamos piezas únicas.</h1>
+    <p>Botellas personalizadas para momentos que merecen ser inolvidables.</p>
+    <button onclick="enviarWhatsApp('Quiero personalizar una botella')">
+      Personaliza la tuya
+    </button>
+  </div>
+
+  <div class="hero-img">
+    <img src="assets/images/botella1.png" alt="Tequila personalizado">
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase">
+  <h2>Colección destacada</h2>
+
+  <div class="grid">
+    <div class="card" onclick="enviarWhatsApp('Me interesa la botella clásica')">
+      <img src="assets/images/botella1.png">
+      <p>Clásica</p>
+    </div>
+
+    <div class="card" onclick="enviarWhatsApp('Me interesa la botella premium')">
+      <img src="assets/images/botella2.png">
+      <p>Premium</p>
+    </div>
+
+    <div class="card" onclick="enviarWhatsApp('Me interesa la botella edición especial')">
+      <img src="assets/images/botella3.png">
+      <p>Edición Especial</p>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALIZACIÓN -->
+<section class="custom">
+  <h2>Hazla única</h2>
+  <p>Agrega nombres, logos o diseños especiales. Cada botella cuenta una historia.</p>
+
+  <button onclick="enviarWhatsApp('Quiero personalizar una botella con diseño especial')">
+    Empezar diseño
+  </button>
+</section>
+
+<!-- EVENTOS -->
+<section class="events">
+  <h2>Perfecto para cada ocasión</h2>
+
+  <div class="grid">
+    <div>Bodas</div>
+    <div>Empresas</div>
+    <div>Regalos</div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <h2>Crea algo inolvidable</h2>
+  <button onclick="enviarWhatsApp('Quiero hacer un pedido')">
+    Pedir por WhatsApp
+  </button>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
