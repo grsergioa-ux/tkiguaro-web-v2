@@ -2,95 +2,125 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tequila Personalizado Premium | TKI Guaro</title>
-  <meta name="description" content="Botellas de tequila personalizadas para eventos, regalos y empresas. Diseño exclusivo y experiencia premium.">
+  <title>TKIGUARO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
 
-<!-- NAV -->
-<header class="nav">
-  <div class="logo">TKI Guaro</div>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Colección</a>
-    <a href="#">Personaliza</a>
-    <a href="#">Eventos</a>
-    <a href="#">Contacto</a>
-  </nav>
-</header>
+<body>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-text">
-    <h1>No vendemos tequila.<br>Creamos piezas únicas.</h1>
-    <p>Botellas personalizadas para momentos que merecen ser inolvidables.</p>
-    <button onclick="enviarWhatsApp('Quiero personalizar una botella')">
-      Personaliza la tuya
-    </button>
-  </div>
+  <div class="overlay"></div>
+  <img src="https://images.unsplash.com/photo-1609951651556-5334e2706168" class="hero-bg">
 
-  <div class="hero-img">
-    <img src="assets/images/botella1.png" alt="Tequila personalizado">
+  <div class="hero-content">
+    <h1>Diseña un tequila que nadie olvidará</h1>
+    <p>Botellas premium personalizadas con grabado exclusivo.</p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Diseña tu botella</a>
+      <a href="#" class="btn-secondary">Conocer proceso</a>
+    </div>
   </div>
 </section>
 
-<!-- SHOWCASE -->
-<section class="showcase">
-  <h2>Colección destacada</h2>
+<!-- PRODUCTOS -->
+<section class="productos">
+  <h2>Productos Destacados</h2>
 
   <div class="grid">
-    <div class="card" onclick="enviarWhatsApp('Me interesa la botella clásica')">
-      <img src="assets/images/botella1.png">
-      <p>Clásica</p>
+
+    <div class="card">
+      <span class="badge">Best Seller</span>
+      <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505">
+      <h3>Tequila Premium</h3>
+      <p>Grabado elegante sobre botella de alta gama</p>
+      <span class="price">Desde $899</span>
+      <button>Personalizar</button>
     </div>
 
-    <div class="card" onclick="enviarWhatsApp('Me interesa la botella premium')">
-      <img src="assets/images/botella2.png">
-      <p>Premium</p>
+    <div class="card">
+      <span class="badge">Nuevo</span>
+      <img src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a">
+      <h3>Edición Especial</h3>
+      <p>Ideal para momentos únicos</p>
+      <span class="price">Desde $1,199</span>
+      <button>Ver detalles</button>
     </div>
 
-    <div class="card" onclick="enviarWhatsApp('Me interesa la botella edición especial')">
-      <img src="assets/images/botella3.png">
-      <p>Edición Especial</p>
+    <div class="card">
+      <span class="badge">Premium</span>
+      <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be">
+      <h3>Mezcal Artesanal</h3>
+      <p>Tradición mexicana personalizada</p>
+      <span class="price">Desde $799</span>
+      <button>Personalizar</button>
     </div>
+
   </div>
 </section>
 
-<!-- PERSONALIZACIÓN -->
-<section class="custom">
-  <h2>Hazla única</h2>
-  <p>Agrega nombres, logos o diseños especiales. Cada botella cuenta una historia.</p>
+<!-- BENEFICIOS -->
+<section class="beneficios">
+  <h2>¿Por qué TKIGUARO?</h2>
 
-  <button onclick="enviarWhatsApp('Quiero personalizar una botella con diseño especial')">
-    Empezar diseño
-  </button>
+  <div class="grid-4">
+    <div>Grabado Premium</div>
+    <div>Botellas Originales</div>
+    <div>Envío Rápido</div>
+    <div>Asesoría Personalizada</div>
+  </div>
 </section>
 
-<!-- EVENTOS -->
-<section class="events">
-  <h2>Perfecto para cada ocasión</h2>
+<!-- CASOS -->
+<section class="casos">
+  <h2>Casos de Uso</h2>
 
-  <div class="grid">
+  <div class="grid-4">
     <div>Bodas</div>
-    <div>Empresas</div>
+    <div>Corporativo</div>
     <div>Regalos</div>
+    <div>Eventos</div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+  <h2>Lo que dicen nuestros clientes</h2>
+
+  <div class="testimonial">
+    <p>"El mejor regalo que he dado en años"</p>
+    <span>- Ana R.</span>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso">
+  <h2>Cómo funciona</h2>
+
+  <div class="steps">
+    <div>1. Elige</div>
+    <div>2. Personaliza</div>
+    <div>3. Confirmamos</div>
+    <div>4. Recibe</div>
   </div>
 </section>
 
 <!-- CTA FINAL -->
 <section class="cta">
-  <h2>Crea algo inolvidable</h2>
-  <button onclick="enviarWhatsApp('Quiero hacer un pedido')">
-    Pedir por WhatsApp
-  </button>
+  <h2>Haz tu pedido hoy</h2>
+  <button>Solicitar cotización</button>
 </section>
 
-<script src="js/script.js"></script>
+<!-- FOOTER -->
+<footer>
+  <p>© TKIGUARO</p>
+</footer>
+
 </body>
 </html>
